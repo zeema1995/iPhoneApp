@@ -22,7 +22,8 @@
                                     <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="titleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JjY-8l-Fjw"/>
+                                    <action selector="titleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lHq-wn-oQe"/>
+                                    <segue destination="gBl-pe-Tqc" kind="show" animates="NO" id="FxA-0o-SZe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOf-31-Fm1">
@@ -36,18 +37,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="n20-Cj-Deh"/>
                     <connections>
-                        <outlet property="titleLabel" destination="mOf-31-Fm1" id="fiU-Aa-Uvc"/>
+                        <outlet property="titleLabel" destination="mOf-31-Fm1" id="DCN-V9-TKK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="eK4-Vc-KMr">
             <objects>
-                <viewController id="gBl-pe-Tqc" customClass="ViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainscreen" modalPresentationStyle="fullScreen" id="gBl-pe-Tqc" customClass="MainViewController" customModule="test3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q8o-Or-6Bx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,11 +79,24 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="sBc-Wl-eJI"/>
                     </view>
-                    <connections>
-                        <outlet property="titleLabel" destination="RmK-gS-6W7" id="Q1l-4y-2Bc"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="s9D-lu-eeC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lJR-IY-Pg6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aU1-2x-F4z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZVq-GK-qUG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sLP-Ad-rdc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38E-2I-Pma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
         </scene>
