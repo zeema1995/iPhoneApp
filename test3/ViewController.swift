@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var titleButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBAction func titleButton(_ sender: Any) {
         titleLabel.text = "タップされました"
@@ -18,6 +19,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .blue
+        titleButton.title = "タイトルです"
         // Do any additional setup after loading the view.
     }
     //test1
