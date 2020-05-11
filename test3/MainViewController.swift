@@ -15,8 +15,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var mainSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .yellow
-        mainLabel.text="押すと音がなります"
+        self.view.backgroundColor = .orange
+        mainLabel.text="押してね"
         mainTestLabel.text=""
 
         // Do any additional setup after loading the view.
