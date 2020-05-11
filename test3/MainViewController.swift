@@ -10,12 +10,26 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var mainTestLabel: UILabel!
+    @IBOutlet weak var mainSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .yellow
+        mainLabel.text="押すと音がなります"
+        mainTestLabel.text=""
+
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func tapped(_ sender: UISwitch) {
+        if sender.isOn{
+            mainTestLabel.text="ON"
+        }else{
+            mainTestLabel.text="OFF"
+        }
+    }
+
 
     /*
     // MARK: - Navigation
@@ -26,5 +40,6 @@ class MainViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }
